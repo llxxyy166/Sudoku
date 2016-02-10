@@ -12,6 +12,8 @@
 		3980ADD31C6A769D00BB50F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3980ADD11C6A769D00BB50F6 /* Main.storyboard */; };
 		3980ADD51C6A769D00BB50F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3980ADD41C6A769D00BB50F6 /* Assets.xcassets */; };
 		3980ADD81C6A769D00BB50F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3980ADD61C6A769D00BB50F6 /* LaunchScreen.storyboard */; };
+		3980ADE71C6A781E00BB50F6 /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3980ADE61C6A781E00BB50F6 /* GameBoardView.swift */; };
+		3980ADE91C6A8B0400BB50F6 /* PuzzleLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3980ADE81C6A8B0400BB50F6 /* PuzzleLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3980ADD41C6A769D00BB50F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3980ADD71C6A769D00BB50F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3980ADD91C6A769D00BB50F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3980ADE61C6A781E00BB50F6 /* GameBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		3980ADE81C6A8B0400BB50F6 /* PuzzleLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				3980ADCD1C6A769D00BB50F6 /* AppDelegate.swift */,
 				3980ADCF1C6A769D00BB50F6 /* ViewController.swift */,
+				3980ADE61C6A781E00BB50F6 /* GameBoardView.swift */,
+				3980ADE81C6A8B0400BB50F6 /* PuzzleLibrary.swift */,
 				3980ADD11C6A769D00BB50F6 /* Main.storyboard */,
 				3980ADD41C6A769D00BB50F6 /* Assets.xcassets */,
 				3980ADD61C6A769D00BB50F6 /* LaunchScreen.storyboard */,
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3980ADD01C6A769D00BB50F6 /* ViewController.swift in Sources */,
+				3980ADE91C6A8B0400BB50F6 /* PuzzleLibrary.swift in Sources */,
 				3980ADCE1C6A769D00BB50F6 /* AppDelegate.swift in Sources */,
+				3980ADE71C6A781E00BB50F6 /* GameBoardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +257,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Sudoku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lei.Sudoku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -260,6 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Sudoku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lei.Sudoku;
